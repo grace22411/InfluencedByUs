@@ -495,6 +495,7 @@ section{
                 .works_content{
                     padding:20px;
                     height:300px;
+                    box-shadow:0 3px 5px rgba(0, 0, 0, 0.16);
                 }
             }
             .col-md-4:nth-child(2),.col-md-4:nth-child(3){
@@ -527,6 +528,7 @@ section{
                 .works_content{
                     padding:20px;
                     height:300px;
+                    box-shadow:0 3px 5px rgba(0, 0, 0, 0.16);
                 }
             }
             .col-md-4:nth-child(2),.col-md-4:nth-child(3){
@@ -708,6 +710,13 @@ section{
                     }
                     .row{
                         margin-top:20px;
+                        img{
+                            height: 60px;
+                            width:60px;
+                        }
+                        .col-10{
+                            padding-left: 30px;
+                        }
                         h2{
                             font-size: 20px;
                         }
@@ -1332,9 +1341,8 @@ footer{
         }
     }
     @media only screen and (min-width:321px) and (max-width:540px){
-        padding-top:30px;
+        padding:30px 15px;
         height: auto;
-        padding-bottom: 30px;
         .container{
             .row{
                 h2{
@@ -1357,7 +1365,7 @@ footer{
         }
     }
     @media only screen and (min-width:541px) and (max-width:720px){
-        
+        padding:30px 35px;
         height: auto;
         .container{
             padding:30px 50px !important;
@@ -1400,6 +1408,12 @@ footer{
             font-size: 14px;
             color:$text-color;
         }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        padding: 20px 15px;
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        padding: 20px 35px;
     }
 }
 
@@ -1565,7 +1579,7 @@ footer{
             margin-top: 20px;
             .col-md-6{
                 h1{
-                    font-size:30px;
+                    font-size:25px;
                 }
                 form{
                     padding: 30px 20px ;
@@ -1606,7 +1620,7 @@ footer{
             padding:0 30px;
             .col-md-6{
                 h1{
-                    font-size:30px;
+                    font-size:25px;
                 }
                 form{
                     padding: 30px 20px ;
