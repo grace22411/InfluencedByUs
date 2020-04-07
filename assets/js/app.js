@@ -6,7 +6,9 @@ const app = new Vue({
         lastName : '',
         email : '',
         password: '',
-        phoneNumber: ''
+        phoneNumber: '',
+        newTweet:'',
+        selectPreference: []
     },
     computed: {
         fullName: {
@@ -32,7 +34,9 @@ const app = new Vue({
           }
         },
         formIsValid : function(){
-          return this.firstName && this.lastName && this.email && this.purchaseAgreementSigned;
+          return this.firstName && this.lastName && this.email && this.phoneNum;
         }
       }
 });
+
+
