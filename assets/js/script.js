@@ -7,6 +7,14 @@ $(document).ready(function () {
     $(".modal-content").fadeOut();
   });
 
+  $(".hamburger").click(function () {
+    $(".modal_content").show();
+  })
+
+  $(".fa-times").click(function () {
+    $(".modal_content").fadeOut();
+  });
+
   $('.code-text').click(function () {
     $('.referral').fadeIn(1000);
     $('.code').fadeOut(200);
@@ -56,6 +64,22 @@ $(document).ready(function () {
   });
   });
 
+
+  // function copyToClipboard(element) {
+  //   var $temp = $("<input>");
+  //   $("body").append($temp);
+  //   $temp.val($(element).text()).select();
+  //   document.execCommand("copy");
+  //   $temp.remove();
+  // }
+var element = $('#p1')
+  $('.fa-copy').click(function(element){
+    var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+  });
   
 
 

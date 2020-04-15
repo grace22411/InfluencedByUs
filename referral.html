@@ -37,6 +37,49 @@
 </head>
 <body>
 
+    <div class="modal_content ">
+        <div class="inn animated slideInRight">
+                <div class="cancel"><i class="fas fa-times"></i></div>
+                <ul>
+                    <li class="active">
+                        <a class="" href="dashboard.html">
+                            <i class="far fa-chart-bar"></i>Campaigns</a>
+                    </li>
+                    <li>
+                        <a href="earnings.html">
+                            <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                    </li>
+                    <li>
+                        <a href="referral.html">
+                            <i class="far fa-user"></i></i>Referrals</a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i></i>Settings</a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+
+<div class="modal fade bottom modal-content-clickable" id="frameModalBottomSuccessDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-frame modal-bottom modal-notify modal-success" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Body-->
+            <div class="modal-body">
+                <div class="row px-4">
+
+                    <p class="pt-1 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit nostrum quos..</p>
+
+                    <a type="button" class="btn btn-primary-modal waves-effect waves-light">Get it now <i class="fa fa-diamond ml-1"></i></a>
+                    <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">No, thanks</a>
+                </div>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+
     <!-- Change Passwaord Modal -->
 <div class="modal fade" id="shareLink">
     <div class="modal-dialog">
@@ -53,7 +96,7 @@
            <h2>Share with friends</h2>
            <p>Earn Cash rewards when friends sign up with your referral link or code</p>
            
-           <i class="far fa-copy"></i>
+           <i class="far fa-copy" onclick="copyToClipboard('#p1')"></i>
            <i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i>
            <i class="fab fa-twitter" style="color:rgb(0,167,230);"></i>
         </div>
@@ -81,28 +124,6 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar-mobile">
-                <div class="container-fluid">
-                    <ul class="navbar-mobile__list list-unstyled">
-                        <li class="has-sub">
-                            <a class="js-arrow" href="dashboard.html">
-                                <i class="fas fa-tachometer-alt"></i>Campaign</a>
-                        </li>
-                        <li>
-                            <a href="earnings.html">
-                                <i class="fas fa-chart-bar"></i>Earnings</a>
-                        </li>
-                        <li   class="active">
-                            <a href="referral.html">
-                                <i class="fas fa-table"></i>Referrals</a>
-                        </li>
-                        <li>
-                            <a href="settings.html">
-                                <i class="far fa-check-square"></i>Settings</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
         </header>
         <!-- END HEADER MOBILE-->
 
@@ -218,11 +239,11 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid referrals">
                         <div class="row refer">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-6">
                                 <p>Current Rewards Earned</p>
                                 <h1>&#8358; 5000</h1>
                             </div>
-                            <div class="col-md-6 butt">
+                            <div class="col-md-6 col-6 butt">
                                 <button data-toggle="modal" data-target="#shareLink">Share Referral Link</button>
                             </div>
                         </div>
@@ -232,7 +253,7 @@
                                     <div class="head">
                                         <h1>Referral Code</h1> 
                                         <div class="icons">
-                                            <i class="far fa-copy"></i>
+                                            <i class="far fa-copy" ></i>
                                         <i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i>
                                         <i class="fab fa-twitter" style="color:rgb(0,167,230);"></i>
                                         </div>
@@ -241,7 +262,7 @@
                                         OLUWACHO
                                     </h2>
                                     <div class="bod-earning">
-                                        
+                                        <p id="p1">https://get.influencedbyus.com/r/OluwaCHO</p>
                                     </div>
                                 </div>
                            </div>
@@ -298,8 +319,10 @@
     <script src="vendor/select2/select2.min.js">
     </script>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
     <!-- Main JS-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 

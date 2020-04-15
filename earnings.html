@@ -36,7 +36,29 @@
 
 </head>
 <body>
-
+    <div class="modal_content ">
+        <div class="inn animated slideInRight">
+                <div class="cancel"><i class="fas fa-times"></i></div>
+                <ul>
+                    <li class="active">
+                        <a class="" href="dashboard.html">
+                            <i class="far fa-chart-bar"></i>Campaigns</a>
+                    </li>
+                    <li>
+                        <a href="earnings.html">
+                            <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                    </li>
+                    <li>
+                        <a href="referral.html">
+                            <i class="far fa-user"></i></i>Referrals</a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i></i>Settings</a>
+                    </li>
+                </ul>
+        </div>
+        </div>
     <!-- Change Passwaord Modal -->
 <div class="modal fade" id="addBank">
     <div class="modal-dialog modal-lg">
@@ -68,13 +90,35 @@
                                 <p class="required">This field is required!</p>
                             </div>
                             <div class="col-md-12 code">
-                                <a href="addCard.html"><button>Add Bank</button></a>
+                                <a href="#almostCampaign"  data-toggle="modal" data-dismiss="modal"><button>Add Bank</button></a>
                             </div>
                     
                         </div>
                     </form>
                 </div>
             </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="almostCampaign">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header" style="border-bottom: none;;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <img src="assets/images/ic_payment_48px.png" alt="" style="height:52px; width:80px; margin-bottom:20px;">
+            <h2>Enter your Password</h2>
+            <p>Enter your password to confirm.</p>
+            <input type="text" placeholder="Enter your InfluencedbyUS password" style="background-color: #fff; border:1px solid grey"><br>
+            <a href="addCard.html"><button>Done</button></a>
         </div>
   
       </div>
@@ -100,28 +144,6 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar-mobile">
-                <div class="container-fluid">
-                    <ul class="navbar-mobile__list list-unstyled">
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Campaign</a>
-                        </li>
-                        <li  class="active">
-                            <a href="earnings.html">
-                                <i class="fas fa-chart-bar"></i>Earnings</a>
-                        </li>
-                        <li>
-                            <a href="referral.html">
-                                <i class="fas fa-table"></i>Referrals</a>
-                        </li>
-                        <li>
-                            <a href="settings.html">
-                                <i class="far fa-check-square"></i>Settings</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
         </header>
         <!-- END HEADER MOBILE-->
 
@@ -314,7 +336,7 @@
     </script>
 
     <!-- Main JS-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 

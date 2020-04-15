@@ -1640,7 +1640,7 @@ section {
 .navbar-sidebar .navbar__list li a:hover {
     
     background-color:rgba(148, 24, 127, 0.05);
-    border-left:8px solid rgba(148, 24, 127, 1);
+    
 }
 
 .navbar-sidebar .navbar__list li.active > a {
@@ -1661,7 +1661,7 @@ section {
 }
 
 .header-mobile .header-mobile__bar {
-    padding: 15px 0;
+    padding: 24px 0 0 15px;
 }
 
 .header-mobile .header-mobile-inner {
@@ -1729,6 +1729,11 @@ section {
     top: 12px;
     width: 20px;
     height: 2px;
+}
+
+.header-mobile img{
+    width:160px;
+    height: 32px;;
 }
 
 .header-mobile .navbar-mobile {
