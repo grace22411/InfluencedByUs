@@ -60,6 +60,7 @@
     </div>
     </div>
 
+
     <!-- Decline Campaign Modal -->
 <div class="modal fade" id="declineCampaign">
     <div class="modal-dialog">
@@ -216,6 +217,40 @@
   </div>
 
 
+    <!--Verification of instagram handle-->
+    <div class="modal fade" id="verifyInstagram">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <img src="assets/images/insta-icon.png" alt=""><h4 class="modal-title" style="font-weight: 700;">Verify your Instagram account</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>1. Enter you Instagram handle to generate your verification Code</p>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" placeholder="@toby_tagg">
+                    </div>
+                    <div class="col-md-4">
+                        <button>Get code</button>
+                    </div>
+                    <div class="col-md-12">
+                        <p>2. Copy and send the code you generated to our DMs <span>@influencedbyus</span> on Instagram.</p>
+                        <p class="warning">Please ensure that you're following us first</p>
+                    </div>
+                </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
@@ -266,7 +301,7 @@
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
-                <h2><span> Hey</span> Cardi B. <img src="assets/images/icone.png" alt=""></h2>
+                <h2><span> Hey</span> Cardi B. <!--<img src="assets/images/icone.png" alt="">--> </h2>
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
@@ -303,9 +338,9 @@
                                 <h2 style="font-weight: 500;">Campaigns</h2>
                             </form>
                             <div class="header-button">
-                                <div class="noti-wrap">
+                                <div class="noti-wrap" style="margin-left:30px !important;">
                                     
-                                    <div class="noti__item js-item-menu">
+                                    <div class="noti__item js-item-menu" style="margin-left:30px !important;">
                                         <i class="zmdi zmdi-notifications"></i>
                                         <span class="quantity">3</span>
                                         <div class="notifi-dropdown js-dropdown">
@@ -347,8 +382,8 @@
                                 </div>
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
-                                        <div class="social-media" style="background-image: url(assets/images/profile.png);">
-                                            <i class="fab fa-instagram"></i>
+                                        <div class="social-media" data-toggle="modal" data-target="#verifyInstagram" style="background-image: url(assets/images/insto.webp);">
+                                            <i class="fas fa-plus"  data-toggle="modal" data-target="#verifyInstagram"></i>
                                         </div>
                                         <div class="social-media" title="Add facebook account" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
                                             <i class="fas fa-plus"></i>
@@ -367,19 +402,22 @@
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
-                <div class="section__content section__content--p30">
+              
+                <div class="section__content section__content--p30" style="margin-top: 50px;">
+                    <div class="input-group dropdown">
+                        <input type="text" class="form-control countrycode dropdown-toggle" value="All Campaigns">
+                        <ul class="dropdown-menu">
+                          <li><button  class="filter-button" data-value="All Campaigns" data-filter="all"> All Campaigns</button></li>
+                          <li><button  class="filter-button" data-value="All Campaigns" data-filter="request">Campaign Requests</button></li>
+                          <li><button  class="filter-button" data-value="All Campaigns" data-filter="ongoing">Ongoing Campaigns</button></li>
+                          <li><button  class="filter-button"  data-value="Completed Campaigns" data-filter="completed"> Completed Campaigns</button></li>
+                          <li><button  class="filter-button"  data-value="Pending Campaigns" data-filter="pending"> Pending Campaigns</button></li>
+                        </ul>
+                        <span role="button" class="input-group-addon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></span>
+                      </div>
                     <div class="container-fluid all_campaigns">
-                        <!-- <div class="row">
-                            <div class="col-md-12">
-                                <div class="overview-wrap">
-                                    <button class="au-btn au-btn-icon au-btn--blue">
-                                        <i class="zmdi zmdi-plus"></i>add item</button>
-                                </div>
-                            </div>
-                        </div> -->
-
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 filter request">
                                 <div class="campaign">
                                     <div class="campaign-image" style="background-image: url(assets/images/camp.png);">
         
@@ -395,7 +433,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 filter ongoing">
                                 <div class="campaign">
                                     <div class="campaign-image" style="background-image: url(assets/images/forma.png);">
                                         <div class="days-left" style="background:linear-gradient(rgba(255, 0, 120, 0.8),rgba(255, 0, 120, 0.8));">
@@ -413,7 +451,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 filter completed">
                                 <div class="campaign">
                                     <div class="campaign-image" style="background-image: url(assets/images/flow.png);">
                                         <div class="days-left" style="background:linear-gradient(rgba(12, 196, 49, 0.8),rgba(12, 196, 49, 0.8));">
@@ -431,7 +469,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 filter request">
                                 <div class="campaign">
                                     <div class="campaign-image" style="background-image: url(assets/images/campaign-4.png);">
                                         
@@ -447,7 +485,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 filter ongoing">
                                 <div class="campaign">
                                     <div class="campaign-image" style="background-image: url(assets/images/logo-camp.png);">
                                         <div class="days-left" style="background:linear-gradient(rgba(255, 0, 120, 0.8),rgba(255, 0, 120, 0.8));">
@@ -465,7 +503,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 last">
+                            <div class="col-md-4 last filter pending">
                                 <div class="campaign">
                                     <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
                                         <div class="days-left" style="background:linear-gradient(rgba(36, 6, 31, 0.8),rgba(36, 6, 31, 0.8))">
@@ -516,6 +554,7 @@
     </script>
 
     <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

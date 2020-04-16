@@ -70,6 +70,12 @@
   margin-right: 20px;
 }
 
+.input-group {
+  margin-top: -50px;
+  width: 30%;
+  float: right;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -91,6 +97,68 @@ html, body {
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   html, body {
     background-color: #fff !important;
+  }
+}
+
+#verifyInstagram {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
+}
+#verifyInstagram .modal-dialog {
+  margin-top: 50px;
+}
+#verifyInstagram .modal-dialog .modal-header h4 {
+  font-size: 15px;
+  margin-left: 20px;
+}
+#verifyInstagram .modal-dialog .modal-content .row {
+  padding: 0 15px;
+}
+#verifyInstagram .modal-dialog .modal-content .row input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+}
+#verifyInstagram .modal-dialog .modal-content .row ::placeholder {
+  font-size: 13px;
+}
+#verifyInstagram .modal-dialog .modal-content .row button {
+  background-color: rgba(94, 5, 109, 0.4);
+  color: #fff;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+}
+#verifyInstagram .modal-dialog .modal-content .row .col-md-12 p {
+  font-size: 13px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+#verifyInstagram .modal-dialog .modal-content .row .col-md-12 p span {
+  color: #5e056d;
+  font-weight: 800;
+}
+#verifyInstagram .modal-dialog .modal-content .row .col-md-12 .warning {
+  font-size: 12px;
+  color: red;
+}
+@media only screen and (max-width: 320px) {
+  #verifyInstagram .modal-content .row button {
+    margin-top: 10px;
+    width: 50% !important;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  #verifyInstagram .modal-content .row button {
+    margin-top: 10px;
+    width: 50% !important;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  #verifyInstagram .modal-content .row button {
+    margin-top: 10px;
+    width: 50% !important;
   }
 }
 
@@ -450,6 +518,15 @@ html, body {
   color: #fff;
   margin-bottom: 30px;
 }
+#almostCampaign .modal-dialog .modal-content .modal-body button {
+  width: 120px;
+  background-color: rgba(94, 5, 109, 0.7);
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  margin-bottom: 30px;
+}
 @media only screen and (max-width: 320px) {
   #almostCampaign {
     overflow: scroll !important;
@@ -728,6 +805,10 @@ html, body {
   border-radius: 100%;
   font-size: 13px;
   margin-top: 20px;
+}
+
+.menu-sidebar {
+  overflow-y: hidden;
 }
 
 .menu-sidebar__content h2 {
@@ -1171,6 +1252,7 @@ html, body {
 }
 .user-earnings .row .col-md-5, .referrals .row .col-md-5 {
   margin-top: 30px;
+  display: none;
 }
 .user-earnings .row .col-md-5 .added_card, .referrals .row .col-md-5 .added_card {
   width: 90%;
@@ -1271,6 +1353,9 @@ html, body {
   .user-earnings .row .col-md-6 .earnings .bod-earning .amount h1, .referrals .row .col-md-6 .earnings .bod-earning .amount h1 {
     font-size: 30px;
   }
+  .user-earnings .row .col-md-5 .added_card, .referrals .row .col-md-5 .added_card {
+    width: 100%;
+  }
   .user-earnings .row .col-md-5 .delete, .referrals .row .col-md-5 .delete {
     padding-bottom: 30px;
     height: 90px;
@@ -1286,6 +1371,9 @@ html, body {
   }
   .user-earnings .row .col-md-6 .earnings .bod-earning .amount h1, .referrals .row .col-md-6 .earnings .bod-earning .amount h1 {
     font-size: 30px;
+  }
+  .user-earnings .row .col-md-5 .added_card, .referrals .row .col-md-5 .added_card {
+    width: 100%;
   }
   .user-earnings .row .col-md-5 .delete, .referrals .row .col-md-5 .delete {
     padding-bottom: 30px;
@@ -1326,6 +1414,9 @@ html, body {
   padding: 0;
   height: 60px;
   text-align: left !important;
+}
+#addBank .modal-header {
+  border-bottom: none;
 }
 #addBank .modal-body {
   padding-bottom: 50px;
@@ -1411,6 +1502,7 @@ html, body {
 }
 .referrals .row .col-md-5 {
   margin-top: 0;
+  display: block;
 }
 .referrals .row .col-md-5 .referral-code {
   width: 100%;

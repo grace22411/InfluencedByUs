@@ -76,6 +76,12 @@ $button-color:#5e056d;
     }
 }
 
+.input-group{
+    margin-top: -50px;;
+    width:30%;
+    float:right;
+
+}
 html,body{
     padding:0;
     margin:0;
@@ -93,6 +99,88 @@ html,body{
         background-color: #fff !important;
     }
 
+}
+
+
+#verifyInstagram{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) !important;
+    .modal-dialog{
+        margin-top: 50px;
+        .modal-header{
+            h4{
+                font-size:15px;
+                margin-left: 20px;
+            }
+        }
+        .modal-content{
+            .row{
+                padding: 0 15px;
+                input{
+                    width:100%;
+                    height:50px;
+                    border-radius: 5px;
+                    padding-left: 20px;
+                    border:1px solid rgba($text-color,0.3);
+                }
+                ::placeholder{
+                    font-size:13px;
+                }
+                button{
+                    background-color: rgba($button-color,0.4);
+                    color:#fff;
+                    border-radius: 5px;
+                    height: 50px;
+                    width:100%;
+                }
+                .col-md-12{
+                    p{
+                        font-size:13px;
+                        margin: 20px 0;
+                        font-weight: 600;
+                        span{
+                            color:$button-color;
+                            font-weight: 800;
+                        }
+                    }
+                    .warning{
+                        font-size: 12px;
+                        color:red;
+                    }
+                }
+            }
+        }
+
+    }
+    @media only screen and (max-width:320px){
+        .modal-content{
+            .row{
+                button{
+                    margin-top:10px;
+                    width:50% !important;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        .modal-content{
+            .row{
+                button{
+                    margin-top:10px;
+                    width:50% !important;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        .modal-content{
+            .row{
+                button{
+                    margin-top:10px;
+                    width:50% !important;
+                }
+            }
+        }
+    }
 }
 
 .navbar-mobile{
@@ -509,6 +597,15 @@ html,body{
                    color:#fff;
                    margin-bottom: 30px;
                }
+               button{
+                width:120px;
+                background-color: rgba($button-color,0.7);
+                height:40px;
+                border-radius: 5px;;
+                border:none;
+                color:#fff;
+                margin-bottom: 30px;
+               }
                
            }
         }
@@ -846,6 +943,9 @@ html,body{
             margin-top: 20px;
         }
     }
+}
+.menu-sidebar{
+    overflow-y: hidden;
 }
 .menu-sidebar__content{
     h2{
@@ -1336,6 +1436,7 @@ html,body{
         }
         .col-md-5{
             margin-top: 30px;
+            display: none;
             .added_card{
                 width:90%;
                 position: relative;
@@ -1456,6 +1557,9 @@ html,body{
                 }
             }
             .col-md-5{
+                .added_card{
+                    width:100%;
+                }
                 .delete{
                     padding-bottom: 30px;
                     height:90px;
@@ -1481,6 +1585,9 @@ html,body{
                 }
             }
             .col-md-5{
+                .added_card{
+                    width:100%;
+                }
                 .delete{
                     padding-bottom: 30px;
                     height:90px;
@@ -1543,6 +1650,9 @@ html,body{
     }
 }
 #addBank{
+    .modal-header{
+        border-bottom:none;
+    }
     .modal-body{
         padding-bottom: 50px;
         .col-md-5{
@@ -1648,6 +1758,7 @@ html,body{
         .row{
             .col-md-5{
                 margin-top: 0;
+                display: block;
                 .referral-code{
                     width:100%;
                     height:220px;

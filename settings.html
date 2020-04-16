@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>Settings</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -35,173 +35,214 @@
 
 
 </head>
-<body>
+
+<body class="animsition">
 
     <div class="modal_content ">
         <div class="inn animated slideInRight">
-                <div class="cancel"><i class="fas fa-times"></i></div>
-                <ul>
-                    <li class="active">
-                        <a class="" href="dashboard.html">
-                            <i class="far fa-chart-bar"></i>Campaigns</a>
-                    </li>
-                    <li>
-                        <a href="earnings.html">
-                            <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                    </li>
-                    <li>
-                        <a href="referral.html">
-                            <i class="far fa-user"></i></i>Referrals</a>
-                    </li>
-                    <li>
-                        <a href="settings.html">
-                            <i class="fas fa-cog"></i></i>Settings</a>
-                    </li>
-                </ul>
+            <div class="cancel"><i class="fas fa-times"></i></div>
+            <ul>
+                <li class="active">
+                    <a class="" href="dashboard.html">
+                        <i class="far fa-chart-bar"></i>Campaigns</a>
+                </li>
+                <li>
+                    <a href="earnings.html">
+                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                </li>
+                <li>
+                    <a href="referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i></i>Settings</a>
+                </li>
+            </ul>
         </div>
+    </div>
+
+
+    <!--Verification of instagram handle-->
+    <div class="modal fade" id="verifyInstagram">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title" style="font-weight: 700;">Verify your Instagram account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>1. Enter you Instagram handle to generate your verification Code</p>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="@toby_tagg">
+                        </div>
+                        <div class="col-md-4">
+                            <button>Get code</button>
+                        </div>
+                        <div class="col-md-12">
+                            <p>2. Copy and send the code you generated to our DMs <span>@influencedbyus</span> on
+                                Instagram.</p>
+                            <p class="warning">Please ensure that you're following us first</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div>
     <!-- Change Passwaord Modal -->
-<div class="modal fade" id="changePassword">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title" style="font-weight: 700;">Change Password</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-            <form action="">
-                <div class="row">
-                    <div class="col-md-12">
-                        <label for="Password">Current Password</label>
-                        <input type="text" value="grace_354728hr" class="form-control">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="Password">New Password</label>
-                        <input type="text" value="grace_354728hr" class="form-control">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="Password">ReType New Password</label>
-                        <input type="text" value="grace_354728hr" class="form-control">
-                    </div>
-                </div>
-            </form>
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-foot">
-          <button type="button" class="yes" data-dismiss="modal" style="background-color: white;">Cancel</button>
-          <button type="button" class="no" data-dismiss="modal" style="background-color: #5e056d;">Done</button>
-        </div>
-  
-      </div>
-    </div>
-  </div>
+    <div class="modal fade" id="changePassword">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-  <div class="modal fade" id="changePreference">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title" style="font-weight: 700;">Preferences</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-            <div class="select-checkbox">
-                <div class="row">
-                    <div class="col-md-6 col-6">
-                        <input type="checkbox" class="eventBtn" data-name="Entertainment"> Entertainment<br>
-                        <input type="checkbox" class="eventBtn" data-name="Fashion"> Fashion<br>
-                        <input type="checkbox" class="eventBtn" data-name="Art & Design"> Art & Design<br>
-                        <input type="checkbox" class="eventBtn" data-name="Lifestyle"> Lifestyle<br>
-                        <input type="checkbox" class="eventBtn" data-name="Spiritual"> Spiritual<br>
-                        
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <input type="checkbox" class="eventBtn" data-name="Relationnship"> Relationship<br>
-                        <input type="checkbox" class="eventBtn" data-name="Technology"> Technology<br>
-                        <input type="checkbox" class="eventBtn" data-name="Education & Improvement"> Education & Improvement<br>
-                        <input type="checkbox" class="eventBtn" data-name="Sports"> Sports<br>
-                    </div>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: 700;">Change Password</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
 
-            <div class="preference-option" id="rightDiv" >
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="Password">Current Password</label>
+                                <input type="text" value="grace_354728hr" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Password">New Password</label>
+                                <input type="text" value="grace_354728hr" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Password">ReType New Password</label>
+                                <input type="text" value="grace_354728hr" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-foot">
+                    <button type="button" class="yes" data-dismiss="modal"
+                        style="background-color: white;">Cancel</button>
+                    <button type="button" class="no" data-dismiss="modal"
+                        style="background-color: #5e056d;">Done</button>
+                </div>
 
             </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-foot">
-          <button type="button" class="yes" data-dismiss="modal" style="background-color: white;">Cancel</button>
-          <button type="button" class="no" data-dismiss="modal" style="background-color: #5e056d;">Done</button>
-        </div>
-  
-      </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="personalInformation">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title" style="font-weight: 700;">Edit Personal Information</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-            <form action="">
-                <div class="row">
-                    <div class="col-md-12">
-                        <label for="Password">Name</label>
-                        <input type="text" value="John Doe" class="form-control">
+    <div class="modal fade" id="changePreference">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: 700;">Preferences</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="select-checkbox">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <input type="checkbox" class="eventBtn" data-name="Entertainment"> Entertainment<br>
+                                <input type="checkbox" class="eventBtn" data-name="Fashion"> Fashion<br>
+                                <input type="checkbox" class="eventBtn" data-name="Art & Design"> Art & Design<br>
+                                <input type="checkbox" class="eventBtn" data-name="Lifestyle"> Lifestyle<br>
+                                <input type="checkbox" class="eventBtn" data-name="Spiritual"> Spiritual<br>
+
+                            </div>
+                            <div class="col-md-6 col-6">
+                                <input type="checkbox" class="eventBtn" data-name="Relationnship"> Relationship<br>
+                                <input type="checkbox" class="eventBtn" data-name="Technology"> Technology<br>
+                                <input type="checkbox" class="eventBtn" data-name="Education & Improvement"> Education &
+                                Improvement<br>
+                                <input type="checkbox" class="eventBtn" data-name="Sports"> Sports<br>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                        <label for="Password">Email</label>
-                        <input type="email" value="olayinkagrace112@gmail.com" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="Password">Age</label>
-                        <input type="email" value="12" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="Password">Gender</label>
-                        <input type="email" value="Female" class="form-control">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="Password">Location</label>
-                        <input type="text" value="grace_354728hr" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="Password">State</label>
-                        <input type="email" value="Ondo" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="Password">City</label>
-                        <input type="email" value="Akure" class="form-control">
+
+                    <div class="preference-option" id="rightDiv">
+
                     </div>
                 </div>
-            </form>
+
+                <!-- Modal footer -->
+                <div class="modal-foot">
+                    <button type="button" class="yes" data-dismiss="modal"
+                        style="background-color: white;">Cancel</button>
+                    <button type="button" class="no" data-dismiss="modal"
+                        style="background-color: #5e056d;">Done</button>
+                </div>
+
+            </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-foot">
-          <button type="button" class="yes" data-dismiss="modal" style="background-color: white;">Cancel</button>
-          <button type="button" class="no" data-dismiss="modal" style="background-color: #5e056d;">Done</button>
-        </div>
-  
-      </div>
     </div>
-  </div>
+
+    <div class="modal fade" id="personalInformation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: 700;">Edit Personal Information</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="Password">Name</label>
+                                <input type="text" value="John Doe" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Password">Email</label>
+                                <input type="email" value="olayinkagrace112@gmail.com" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="Password">Age</label>
+                                <input type="email" value="12" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="Password">Gender</label>
+                                <input type="email" value="Female" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Password">Country</label>
+                                <input type="text" value="Nigeria" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="Password">State</label>
+                                <input type="email" value="Ondo" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-foot">
+                    <button type="button" class="yes" data-dismiss="modal"
+                        style="background-color: white;">Cancel</button>
+                    <button type="button" class="no" data-dismiss="modal"
+                        style="background-color: #5e056d;">Done</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
@@ -233,7 +274,9 @@
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
-                <h2><span> Hey</span> Cardi B. <img src="assets/images/icone.png" alt=""></h2>
+                <h2><span> Hey</span> Cardi B.
+                    <!--<img src="assets/images/icone.png" alt="">-->
+                </h2>
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="has-sub">
@@ -252,7 +295,7 @@
                             <a href="settings.html">
                                 <i class="fas fa-cog"></i></i>Settings</a>
                         </li>
-                        
+
                     </ul>
                 </nav>
             </div>
@@ -270,9 +313,9 @@
                                 <h2 style="font-weight: 500;">Settings</h2>
                             </form>
                             <div class="header-button">
-                                <div class="noti-wrap">
-                                    
-                                    <div class="noti__item js-item-menu">
+                                <div class="noti-wrap" style="margin-left:30px !important;">
+
+                                    <div class="noti__item js-item-menu" style="margin-left:30px !important;">
                                         <i class="zmdi zmdi-notifications"></i>
                                         <span class="quantity">3</span>
                                         <div class="notifi-dropdown js-dropdown">
@@ -314,13 +357,16 @@
                                 </div>
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
-                                        <div class="social-media" style="background-image: url(assets/images/profile.png);">
-                                            <i class="fab fa-instagram"></i>
-                                        </div>
-                                        <div class="social-media" title="Add facebook account" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+                                        <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
+                                            style="background-image: url(assets/images/insto.webp);">
                                             <i class="fas fa-plus"></i>
                                         </div>
-                                        <div class="social-media" title="Add twitter account" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+                                        <div class="social-media" title="Add facebook account"
+                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div class="social-media" title="Add twitter account"
+                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
                                             <i class="fas fa-plus"></i>
                                         </div>
                                     </div>
@@ -339,13 +385,15 @@
                         <h3>Account Settings</h3>
                         <p>Connected Platforms</p>
                         <div class="social">
-                            <div class="social-media" style="background-image: url(assets/images/profile.png);">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                            <div class="social-media" title="Add facebook account" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+                            <div class="social-media" style="background-image: url(assets/images/insto.webp);">
                                 <i class="fas fa-plus"></i>
                             </div>
-                            <div class="social-media" title="Add twitter account" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+                            <div class="social-media" title="Add facebook account"
+                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="social-media" title="Add twitter account"
+                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
                                 <i class="fas fa-plus"></i>
                             </div>
                         </div>
@@ -358,7 +406,7 @@
                             </div>
                         </div> -->
                         <div class="information">
-                            
+
                             <h4>Name</h4>
                             <div class="row">
                                 <div class="col-md-6">
@@ -371,13 +419,13 @@
                         </div>
 
                         <div class="information">
-                            
+
                             <h4>Email</h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <p class="email">janeokojie@gmail.com</p>
                                 </div>
-                                <div class="col-md-6 butt" >
+                                <div class="col-md-6 butt">
                                     <button data-toggle="modal" data-target="#personalInformation">Edit</button>
                                 </div>
                             </div>
@@ -389,20 +437,20 @@
                                 <div class="col-md-6">
                                     <p class="email" style="color:black;font-weight:600">Change Password</p>
                                 </div>
-                                <div class="col-md-6 butt" >
+                                <div class="col-md-6 butt">
                                     <button data-toggle="modal" data-target="#changePassword">Update</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="information down">
-                            
+
                             <h4>Interests</h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <p class="email">janeokojie@gmail.com</p>
                                 </div>
-                                <div class="col-md-6 butt" >
+                                <div class="col-md-6 butt">
                                     <button data-toggle="modal" data-target="#changePreference">Edit</button>
                                 </div>
                             </div>
@@ -414,20 +462,21 @@
                                 <div class="col-md-6">
                                     <p class="email" style="color:black;font-weight:600">Email Notifications</p>
                                 </div>
-                                <div class="col-md-6 butt" >
+                                <div class="col-md-6 butt">
                                     <label class="switch">
                                         <input type="checkbox" checked>
                                         <span class="slider round"></span>
-                                      </label>
+                                    </label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="information down">
-                            <h4  style="color:red;margin-top: 15px;">Leave InfluencedbyUS</h4>
+                            <h4 style="color:red;margin-top: 15px;">Leave InfluencedbyUS</h4>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p class="email" style="color:red;font-weight:500">Deleting your account will remove all your data on InfluencedbyUS</p>
+                                    <p class="email" style="color:red;font-weight:500">Deleting your account will remove
+                                        all your data on InfluencedbyUS</p>
                                 </div>
                             </div>
                         </div>
@@ -464,6 +513,7 @@
     </script>
 
     <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>
